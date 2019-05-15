@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Order1",
+        "id": 1,
+    "clientName": "Raul Boar",
+    "itemsList": items[1].name + ','+ items[2].name,
+    "totalPrice": items[1].price+items[2].price
+    }
+]

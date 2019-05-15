@@ -1,0 +1,342 @@
+[
+    {
+        "id": 1,
+        "firstName": "dddsadsadsadsa",
+        "lastName": "iiioohbidsa",
+        "age": 21,  
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.63,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 0",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 0, 785678",
+        "highSchool": {
+            "name": "CNDP",
+            "highSchoolProfile": "human",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 2,
+        "firstName": "Craciun",
+        "lastName": "Raul",
+        "age": 19,
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.76,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 1",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 1",
+        "highSchool": {
+            "name": "CNDP",
+            "highSchoolProfile": "human",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 3,
+        "firstName": "Miclea",
+        "lastName": "Daniel",
+        "age": 20,
+        "gender": "mascuin",
+        "cv": false,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.88,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 2",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 2, 785678",
+        "highSchool": {
+            "name": "IDL",
+            "highSchoolProfile": "human",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 4,
+        "firstName": "Dicu",
+        "lastName": "Robert",
+        "age": 21,
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.68,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 3",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 3",
+        "highSchool": {
+            "name": "HCC",
+            "highSchoolProfile": "human",
+            "city": "Alba-Iulia"
+        }
+    },
+    {
+        "id": 5,
+        "firstName": "Dan",
+        "lastName": "Razvan",
+        "age": 21,
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.95,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 4",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 4, 785678",
+        "highSchool": {
+            "name": "CNDP",
+            "highSchoolProfile": "human",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 6,
+        "firstName": "Popa",
+        "lastName": "Marius",
+        "age": 20,
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.98,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 5",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 5",
+        "highSchool": {
+            "name": "HCC",
+            "highSchoolProfile": "real",
+            "city": "Alba-Iulia"
+        }
+    },
+    {
+        "id": 7,
+        "firstName": "Pereanu",
+        "lastName": "Adelina",
+        "age": 20,
+        "gender": "feminin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.85,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 6",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 6, 785678",
+        "highSchool": {
+            "name": "HCC",
+            "highSchoolProfile": "real",
+            "city": "Alba-Iulia"
+        }
+    },
+    {
+        "id": 8,
+        "firstName": "Pasca",
+        "lastName": "Ana",
+        "age": 20,
+        "gender": "feminin",
+        "cv": false,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.61,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 7",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 7",
+        "highSchool": {
+            "name": "IDL",
+            "highSchoolProfile": "human",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 9,
+        "firstName": "Presecan",
+        "lastName": "Iuia",
+        "age": 20,
+        "gender": "feminin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.91,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 8",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 8, 785678",
+        "highSchool": {
+            "name": "CNDP",
+            "highSchoolProfile": "real",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 10,
+        "firstName": "Ovidiu",
+        "lastName": "Andrei",
+        "age": 21,
+        "gender": "masculin",
+        "cv": false,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.9,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 9",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 9",
+        "highSchool": {
+            "name": "HCC",
+            "highSchoolProfile": "real",
+            "city": "Alba-Iulia"
+        }
+    },
+    {
+        "id": 11,
+        "firstName": "Halalai",
+        "lastName": "Mihai",
+        "age": 21,
+        "gender": "masculin",
+        "cv": false,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.86,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 10",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 10, 785678",
+        "highSchool": {
+            "name": "IDL",
+            "highSchoolProfile": "real",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 12,
+        "firstName": "Crisan",
+        "lastName": "Andreea",
+        "age": 20,
+        "gender": "feminin",
+        "cv": false,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.64,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 11",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 11",
+        "highSchool": {
+            "name": "CNDP",
+            "highSchoolProfile": "human",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 13,
+        "firstName": "Longodor",
+        "lastName": "Dragos",
+        "age": 21,
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.83,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 12",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 12, 785678",
+        "highSchool": {
+            "name": "CNDP",
+            "highSchoolProfile": "real",
+            "city": "Cugir"
+        }
+    },
+    {
+        "id": 14,
+        "firstName": "Blaga",
+        "lastName": "Alexandra",
+        "age": 20,
+        "gender": "feminin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.6,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 13",
+            "zipCode": null
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 13",
+        "highSchool": {
+            "name": "HCC",
+            "highSchoolProfile": "real",
+            "city": "Alba-Iulia"
+        }
+    },
+    {
+        "id": 15,
+        "firstName": "Paraschiv",
+        "lastName": "Ioana",
+        "age": 21,
+        "gender": "feminin",
+        "cv": false,
+        "startYear": 2019,
+        "endYear": 2023,
+        "height": 1.65,
+        "address": {
+            "country": "ROMANIA",
+            "address": "Some street name, no. 14",
+            "zipCode": "785678"
+        },
+        "fullAddress": "ROMANIA, Some street name, no. 14, 785678",
+        "highSchool": {
+            "name": "IDL",
+            "highSchoolProfile": "real",
+            "city": "Cugir"
+        }
+    },
+    {
+        "firstName": "Boar",
+        "lastName": "Alex",
+        "age": 21,
+        "gender": "masculin",
+        "cv": true,
+        "startYear": 2019,
+        "endYear": 2023,
+        "id": 16
+    }
+]

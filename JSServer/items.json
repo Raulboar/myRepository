@@ -1,0 +1,77 @@
+[
+    {
+        "name": "milk",
+        "id": 1,
+        "description": "Milk is a nutrient-rich, white liquid food produced by the mammary glands of mammals.",
+        "price": 4.93,
+        "images": [
+            "image1",
+            "image2",
+            "image3"
+        ]
+    },
+    {
+        "name": "bread",
+        "id": 2,
+        "description": "Bread is a staple food prepared from a dough of flour and water, usually by baking.",
+        "price": 5,
+        "images": [
+            "image1"
+        ]
+    },
+    {
+        "name": "flour",
+        "id": 3,
+        "description": "Flour is a powder made by grinding raw grains or roots and used to make many different foods.",
+        "price": 3.9,
+        "images": [
+            "image1",
+            "image2"
+        ]
+    },
+    {
+        "name": "meat",
+        "id": 4,
+        "description": "Meat is animal flesh that is eaten as food.",
+        "price": 15,
+        "images": [
+            "image1",
+            "image2"
+        ]
+    },
+    {
+        "name": "chocolate",
+        "id": 5,
+        "description": "Chocolate is a usually sweet, brown food preparation of roasted and ground cacao seeds.",
+        "price": 4,
+        "images": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "name": "cheese",
+        "id": 6,
+        "description": "Cheese is a dairy product derived from milk that is produced in a wide range of flavors, textures.",
+        "price": 10.44,
+        "images": [
+            "image1",
+            "image2,",
+            "image3",
+            "image4",
+            "image5"
+        ]
+    },
+    {
+        "name": "olive",
+        "id": 7,
+        "description": "The olive, known by the botanical name Olea europaea, meaning \"European olive\".",
+        "price": 5.95,
+        "image": [
+            "image1",
+            "image2"
+        ]
+    }
+]
