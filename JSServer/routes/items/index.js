@@ -37,6 +37,9 @@ router.route('/byprice/:price')
         res.send('Will need to get an item based on name');
     });
 
+router.route('/isvalid/:id')  
+   .get(itemsController.getNumberOfAppearencesInOrderItems)  
+
 module.exports = {
     router,
     PATH,

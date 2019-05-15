@@ -77,12 +77,13 @@ const getItemByName = (req, callback) => {
   })
 
 }
-
+      
 const deleteItemById = (req, callback) => {
   pool.connect((err, client, release) => {
     if (err) {
       return callback('Error acquiring client because of ' + err)
     }
+
     client.query('DELETE FROM items where id = ' + req.id, (err, result) => {
       release()
       if (err) {
@@ -91,6 +92,7 @@ const deleteItemById = (req, callback) => {
       console.log(result.rowCount)
       return callback(null, result.rowCount);
     })
+
   })
 
 }
@@ -101,14 +103,14 @@ const addItem = (item, callback) => {
       return callback('Error acquiring client because of ' + err)
     }
     console.log('HERE' + item.name)
-    let queryString = 'INSERT into items (name,description,price) values ' + '(' + '\'' + item.name + '\',\'' + item.description + '\',' + item.price +')';
+    let queryString = 'INSERT into items (name,description,price) values ' + '(' + '\'' + item.name + '\',\'' + item.description + '\',' + item.price + ')';
     console.log(queryString);
     client.query(queryString, (err, result) => {
       release()
       if (err) {
         return callback('Error executing query : ' + err)
       }
-      console.log(result.rowCount)
+      console.log(result)
       return callback(null, result.rowCount);
     })
   })
@@ -229,14 +231,14 @@ const addOrderItems = (order_id, itemIds, callback) => {
     }
     let itemQuery = '';
     let queryString = 'insert into order_items (order_id,item_id,qty) values ';
-      itemIds.forEach(element => {
+    itemIds.forEach(element => {
 
-        itemQuery += ' (' +
-          order_id + ',' +
-          element + ',' +
-          '1' +
-          ') ' + ',';
-      });
+      itemQuery += ' (' +
+        order_id + ',' +
+        element + ',' +
+        '1' +
+        ') ' + ',';
+    });
     itemQuery = itemQuery.slice(0, -1);
     queryString = queryString + itemQuery;
     console.log(queryString);
@@ -259,12 +261,12 @@ const getOrderDetailsById = (req, callback) => {
     }
     client.query(orderDetailsQuery + req.id, (err, result) => {
       release()
-      
+
       if (err) {
         console.log(err);
         return callback('Error executing query : ' + err)
       }
-      
+
       return callback(null, result.rows);
     })
   })
@@ -309,33 +311,51 @@ const editOrderById = (updateData, callback) => {
 const deleteOrderById = (req, callback) => {
   pool.connect((err, client, release) => {
     if (err) {
-      return callback('Error acquiring client because of ' + err)
-    }
-    client.query('DELETE FROM orders where id = ' + req.id, (err, result) => {
+     return callback('Error acquiring client because of ' + err)
+      }
+      if (getNumberOfAppearencesInOrderItems(req.id) == 0) {
+      client.query('DELETE FROM orders where id = ' + req.id, (err, result) => {
       release()
       if (err) {
-        return callback('Error executing query : ' + err)
+      return callback('Error executing query : ' + err)
       }
       console.log(result.rowCount)
       return callback(null, result.rowCount);
-    })
-  })
-
+      });
+    }
+  });
 }
 
-module.exports = {
-  getItems,
-  getItemById,
-  getItemByPrice,
-  getItemByName,
-  deleteItemById,
-  addItem,
-  editItemById,
-  getAllOrders,
-  getOrderById,
-  addOrder,
-  addOrderItems,
-  getOrderDetailsById,
-  editOrderById,
-  deleteOrderById
-}
+const getNumberOfAppearencesInOrderItems = (req, callback) => {
+  pool.connect((err, client, release) => {
+    if (err) {
+     return callback('Error acquiring client because of ' + err)
+      }
+      client.query('SELECT FROM order_items where item_id = ' + req.id, (err, result) => {
+        release()
+        if (err) {
+         return ('Error executing query : ' + err)
+        }
+        console.log(result.rowCount)
+        return callback(null, result.rowCount);
+        })
+      })
+    }
+
+    module.exports = {
+      getItems,
+      getItemById,
+      getItemByPrice,
+      getItemByName,
+      deleteItemById,
+      addItem,
+      editItemById,
+      getAllOrders,
+      getOrderById,
+      addOrder,
+      addOrderItems,
+      getOrderDetailsById,
+      editOrderById,
+      deleteOrderById,
+      getNumberOfAppearencesInOrderItems
+    }

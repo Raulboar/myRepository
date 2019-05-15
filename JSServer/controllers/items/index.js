@@ -60,18 +60,32 @@ const editItemById = (req, res) => {
 
 const deleteItemById = (req, res) => {
     console.log('ItemsController.deleteItemById');
+    
     db.deleteItemById({
         id: req.params.id
     }, function (err, result) {
         if (err) {
-            console.log('An error has ocurred: ' + err);
+            console.log('The object is already in an order');
+            res.send({
+                "text": "The object is already in an order"
+              })
         }
-        console.log('items = ' + result)
-        res.send({
-            "items": result
-        });
+        console.log(result);  
+        if (result==1){
+           res.send({
+             "text": "The item was deleted"
+           })   
+         }
+       if (result == 0){
+        res.send({ 
+            "text":"This object does not exist" 
+          })
+        }
+       
     });
 }
+
+
 
 const addItem = (req, res) => {
     console.log('ItemsController.addItem');
@@ -137,6 +151,20 @@ const filterByPrice = (req, res) => {
     });
 }
 
+const getNumberOfAppearencesInOrderItems = (req,res) => {
+    console.log('ItemsController.getNumberOfAppearencerInOrderItems');
+    db.getNumberOfAppearencesInOrderItems({
+        id: req.params.id
+    }, function (err, result) {
+        if (err) {
+            console.log('An error has ocurred: ' + err);
+        }
+        console.log('Number of apperence in item_orders = ' + result)
+        res.send({
+            "Number of apperence in item_orders": result
+        });
+    });
+}
 
 
 module.exports = {
@@ -146,5 +174,6 @@ module.exports = {
     deleteItemById,
     editItemById,
     getItemByName,
-    filterByPrice
+    filterByPrice,
+    getNumberOfAppearencesInOrderItems
 }
